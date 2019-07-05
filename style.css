@@ -1,0 +1,38 @@
+span {
+
+	color: white;
+
+
+}
+
+
+#in-btn {
+
+	position: absolute;
+	top: 50px;
+	opacity: 0;
+	cursor: pointer;
+	border: 1px solid black;
+	z-index: 100;
+
+}
+
+
+
+.new {
+
+	position: relative;
+	left: 75px;
+	top: 45px;
+	padding: 4px;
+	background: blue;
+	cursor: pointer;
+
+}
+
+
+.new:hover {
+
+
+	background-color: purple;
+}

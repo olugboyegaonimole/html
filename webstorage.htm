@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+
+<p id="demo1"></p>
+
+<button onclick="myFunction1()">setitem</button>
+
+<script type="text/javascript">
+
+	function myFunction1() {
+
+		localStorage.setItem("key1", 102, 000);
+
+	}
+
+</script>
+
+<hr>
+
+
+
+
+
+
+<p id="demo2"></p>
+
+<button onclick="myFunction2()">getItem</button>
+
+<script type="text/javascript">
+	
+	function myFunction2() {
+
+		alert(localStorage.getItem("key1"));
+	}
+</script>
+ 
+</body>
+</html>

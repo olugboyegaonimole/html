@@ -1,0 +1,1222 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+	<meta charset="utf-8">
+
+	<title>html5</title>
+
+	<style type="text/css">
+		
+		header {
+
+			padding: 2em;
+
+			background-color: blue;
+
+			text-align: center;
+
+		}
+
+
+		h1 {
+
+			font-family: verdana;
+
+			color: #fff;
+		}
+
+		nav {
+
+			background-color: orange;
+
+			padding: 20px;
+
+			text-align: center;
+
+		}
+
+	</style>
+
+
+	<script type="text/javascript">
+
+		function allowDrop(ev) {
+			ev.preventDefault();
+		}
+
+
+
+
+		function drag(ev) {
+			ev.dataTransfer.setData("text", ev.target.id);
+		}
+
+
+
+
+		function drop(ev) {
+			ev.preventDefault();
+			var data = ev.dataTransfer.getData("text");
+			ev.target.appendChild(document.getElementById(data));
+		}
+		
+
+	</script>
+
+
+
+</head>
+
+<body>
+
+	
+
+
+	<header>
+
+		<h1>header</h1>
+		<h3>higher level header</h3>
+		<h5>lower level header</h5>
+	
+	</header>
+
+	<hr>
+
+
+
+
+
+
+
+
+	<nav>
+
+		<h1>navigation</h1>
+
+		<ul style="list-style-type: none;">
+			<li style="float: left;"><a href="" style="padding: 10px">Home</a></li>
+			<li style="float: left;"><a href="" style="padding: 10px">Services</a></li>
+			<li style="float: left;"><a href="" style="padding: 10px">About Us</a></li>
+		</ul>
+
+	</nav>
+
+	<br>
+
+
+
+	<article style="background-color: #00f; padding: 20px">
+
+		<h1>1. introduction to content models</h1>
+
+			<h3>metadata</h3>
+
+			sets up presentation and behavior
+
+			<hr>
+
+
+
+			<h3>embedded</h3>
+
+			imports resources 
+
+			<hr>
+
+
+
+			<h3>interactive</h3>
+
+			for user interaction
+
+			<hr>
+
+
+
+			<h3>heading</h3>
+
+			section header
+
+			<hr>
+
+
+
+			<h3>phrasing</h3>
+
+			inline level elements
+
+			<hr>
+
+
+
+
+
+
+
+
+
+
+
+
+		<h1>2. content models</h1>
+
+			<h3>flow content</h3>
+
+			majority of elements
+
+			<hr>
+
+
+
+			<h3>sectioning content</h3>
+
+			<pre>
+				headings
+				content
+				navigation
+				footers
+			</pre>
+
+			<hr>
+
+
+
+
+
+
+
+
+		<h1>3. content of footer</h1>
+
+			<pre>
+				contact info
+				social media icons
+
+				terms of service
+				privacy
+				copyright
+
+				sitemap
+
+			</pre>
+
+			<hr>
+
+
+	</article>
+
+	<br>
+
+
+
+
+
+
+
+
+
+	<article style="background-color: red; padding: 20px">
+
+		<h1>articles</h1>
+
+		
+		<h1>article heading</h1>
+
+		<p>article content</p>
+
+		<hr>
+
+
+
+
+
+
+		<section>
+			
+			<h1>section heading</h1>
+
+			<p>section content</p>
+
+		</section>
+
+		<hr>
+
+
+
+
+
+		<aside>
+			
+			<h1>aside within article</h1>
+
+			<h1>aside heading</h1>
+
+			<p>aside content</p>
+
+		</aside>
+
+		<hr>
+
+	</article>
+
+	<br>
+
+
+
+
+
+
+
+	<aside style="background-color: yellow; padding: 20px">
+		
+		<h1>aside outside article</h1>
+
+		<h1>aside heading</h1>
+
+		<p>aside content</p>
+
+	</aside>
+
+	<br>
+
+
+
+
+
+
+
+	<article style="background-color: orange; padding: 20px">
+
+		<h1>audio formats: mp3, wav, ogg</h1>
+
+		<hr>
+
+
+
+		<h1>audio, style 1</h1>
+
+		<pre>		
+
+		audio src="1.mp3" controls="">
+
+		/audio>
+		
+		</pre>
+
+		<audio src="1.mp3" controls=""></audio>
+
+		<hr>
+
+
+
+
+
+
+
+		<h1>audio, style 2</h1>
+
+		<pre>		
+
+		audio controls="">
+			
+		source src="1.mp3" type="">
+
+		/audio>
+
+		</pre>
+
+		<audio controls="">
+			
+			<source src="1.mp3" type="">
+
+		</audio>
+
+			<hr>
+
+
+
+
+
+
+
+
+		<audio controls="" loop="">
+
+			<source src="2.mp3" type="">
+
+		</audio>
+
+
+
+
+		<hr>
+
+	</article>
+
+	<br>
+
+
+
+
+	<article style="background-color: yellow; padding: 20px">
+
+		<h1>video formats: mp4, WebM, ogg</h1>
+
+		<hr>
+
+		<h1>videos</h1>
+
+		<video controls="">
+
+			<source src="1.mp4" type="video/mp4">
+
+			this element is not supported by your browser
+			
+
+
+
+		</video>
+
+
+	</article>
+
+
+	<hr>
+
+
+
+
+
+
+
+
+	<article style="background-color: green; padding: 20px">
+		
+		<h1>progress bar</h1>
+
+		<progress value="34" min="0" max="100">
+
+	</article>
+
+	<hr>
+
+
+
+
+
+
+
+	<article style="background-color: blue; padding: 20px">
+		
+		<h1>web storage API</h1>
+
+		<ul>
+			<li>fast</li>
+			<li>secure</li>
+			<li>lage amount of data</li>
+			<li>data is not sent with every request</li>
+		</ul>
+
+
+
+
+		<button onclick="myFunction1()">setItem1</button> 
+
+		<script type="text/javascript">
+			
+			function myFunction1() {
+				localStorage.setItem("keya","it works!");
+			}
+
+		</script>
+
+		<hr>
+
+
+
+
+
+
+		<button onclick="myFunction5()">setItem2</button>
+
+		<script type="text/javascript">
+			function myFunction5() {
+				localStorage.setItem("keya", "still works!");
+			}
+		</script>
+
+		<hr>
+
+
+
+
+
+
+		<button onclick="myFunction2()">getItem</button>
+
+		<script type="text/javascript">
+
+			function myFunction2() {
+				alert(localStorage.getItem("keya"));
+			}
+
+		</script>
+
+		<hr>
+
+
+
+
+
+		<button onclick="myFunction3()">removeItem</button>
+
+		<script type="text/javascript">
+			function myFunction3() {
+				localStorage.removeItem("keya");
+			}
+		</script>
+
+		<hr>
+
+
+
+
+
+		<button onclick="myFunction4()">clear (clear all)</button>
+
+		<script type="text/javascript">
+			function myFunction4() {
+				localStorage.clear();
+			}
+		</script>
+
+
+
+
+
+	</article>
+
+	<br>
+
+
+
+
+
+
+
+
+	<article style="background-color: indigo; padding: 20px">
+
+		<h1>Geolocation API</h1>
+
+		<pre>
+
+		p id="demo1">
+
+		/p>
+
+
+
+
+		button>
+
+		onclick="getLocation()">click me
+
+		/button>
+
+
+
+
+		script type="text/javascript">
+
+			var x = document.getElementById("demo1");
+
+			function getLocation() {
+				navigator.geolocation.getCurrentPosition(showPosition);
+			}
+
+
+			function showPosition(position) {
+				x.innerHTML = "latitude " + position.coords.latitude + "<br> longitude " + position.coords.longitude;
+			}
+
+		/script>
+
+		</pre>
+
+
+		<p id="demo1"></p>
+
+		<button onclick="getLocation()">click me</button>
+
+
+		<script type="text/javascript">
+
+			var x = document.getElementById("demo1");
+
+
+			function getLocation() {
+
+				
+				navigator.geolocation.getCurrentPosition(showPosition);
+			}
+
+
+
+			function showPosition(position) {
+				x.innerHTML = "latitude " + position.coords.latitude + "<br> longitude " + position.coords.longitude;
+			}
+		</script>
+		
+	</article>
+
+	<br>
+
+
+
+
+
+
+
+
+	<article style="background-color: purple; padding: 20px">
+
+		<h1>drag and drop API</h1>
+
+		<h3>tools</h3>
+
+		<ul>
+			<li>ev.target.id</li>
+			<li>ev.target.appendChild()</li>
+			<li>ev.dataTransfer.setData()</li>
+			<li>ev.dataTransfer.getData()</li>
+		</ul>
+
+
+		<p>ev.preventDefault()</p>
+
+
+		<div 
+
+		id="box" 
+		ondrop="drop(event)" 
+		style="border: 1px solid black; padding: 10px; background-color: purple; width: 900px; height: 600px"
+		ondragover="allowDrop(event)" 
+
+
+		>
+
+
+
+
+			
+		</div>
+
+
+
+		<img 
+		src="php.jpg"
+		id="image"
+		draggable="true"
+		ondragstart="drag(event)"
+		width="150"
+		height="150" 
+		>
+
+	</article>
+
+	<br>
+
+
+
+
+
+
+
+
+
+
+	<article style="background-color: orange; padding: 20px">
+		
+	<h1>SVG</h1>
+
+
+	<svg width="1000" height="300">
+		
+		<circle cx="80" cy="90" r="250" stroke="green" stroke-width="10px">
+
+	</svg>
+
+	<hr>
+
+
+
+
+
+
+	<svg width="1000" height="800">
+
+		<rect width = "200" height="250" x = "150" y="150" fill="red" stroke="black" stroke-width="10">
+
+	</svg>
+
+	<hr>
+
+
+
+
+
+
+
+	<svg width="900" height="300">
+
+		<rect width="700" height="100" x = "255" y = "55" fill = "yellow" stroke="orange" stroke-width="20">
+
+	</rect>
+
+	</svg>
+
+	<hr>
+
+
+
+
+
+
+	<svg width="900" height="600">
+
+	 <line x1="50" y1="50" x2="200" y2="200" style="stroke: black; stroke-width: 30; stroke-linecap: round;">
+
+
+	</line>
+
+	</svg>
+
+	<hr>
+
+
+
+
+
+
+
+
+	<svg width="1000" height="600">
+
+		<line x1="20" y1="20" x2="600" y2="300" style="stroke: #000; stroke-linecap: round; fill: yellow; stroke-width: 30">
+
+	</line>
+
+	</svg>
+
+	<hr>
+
+
+
+
+
+
+	<svg width="1000" height="500">
+
+		<polyline points="150 150, 250 250, 350 150, 450 250" style="stroke: #000; stroke-linejoin: miter; fill: none; stroke-linecap: round; stroke-width: 40">
+
+	</polyline>
+
+	</svg>
+
+	<hr>
+
+
+
+
+
+
+
+	<svg width="900" height="600">
+
+		<ellipse cx="250" cy="150" rx="250" ry="125" style="fill: red; stroke: black; stroke-width: 20">
+
+	</ellipse>
+
+	</svg>
+
+	<hr>
+
+
+
+
+
+
+
+
+	<svg width="1000" height="600">
+
+		<polygon points="150 150, 400 400, 750 20" style="stroke: black; stroke-width: 10px; fill: brown">
+
+	</polygon>
+
+	</svg>
+
+
+
+
+	</article>
+
+	<br>
+
+
+
+
+
+
+
+
+
+
+	<article style="background-color: yellow; padding: 20px">
+		
+		<h1>SVG Animate</h1>
+
+
+		<svg width="1200" height="600">
+
+			<rect width="100" height="50" style="fill: green; stroke: #fff; stroke-width: 10" y="50">
+
+				<animate fill="freeze" repeatCount="indefinite" dur="5s" attributeName="x" from="0" to="800">
+
+			</animate>
+			</rect>
+
+
+			<rect width="50" height="20" x="50" style="fill: blue; stroke: #000; stroke-width: 10">
+
+				<animate fill="remove" repeatCount="indefinite" from="0" to="550" attributeName="y" dur="5s">
+
+				</animate>
+				</rect>
+
+			</svg>
+
+
+		<hr>
+
+
+
+
+		<h1>SVG Absolute Path</h1>
+
+		<svg width="1000" height="700">
+
+		<path d="M 50 50 L 200 50 L 400 400 L 50 400 Z" style="stroke: black; fill: none; stroke-width: 10">
+
+		</svg>
+
+		<hr>
+
+
+
+
+
+
+
+		<h1>svg relative path</h1>
+
+		<svg width = "1000" height = "1400">
+
+		<path d = "m 50 50 l 200 50 l 400 400 l 50 400 z" style = "stroke: black; fill: none; stroke-width: 10">
+
+		</svg>
+
+
+
+	</article>
+
+	<br>
+
+
+
+
+
+
+
+	<article style="background-color: green; padding: 20px">
+
+
+	<h1>Canvas</h1>
+
+	<h3>2 canvases in one article</h3>
+
+
+		<h4>canvas 1: two scripts in one canvas</h4>
+		
+
+		<canvas id="canvas1" width="1000" height="1000" style="background-color: red">
+
+			
+		</canvas>
+
+
+		<script type="text/javascript">
+			
+			var c = document.getElementById("canvas1");
+			var ctx = c.getContext("2d");
+			ctx.fillStyle = "rgba(0,0,200,1)";
+			ctx.fillRect(10,10,100,100);
+
+		</script>
+
+		<hr>
+
+
+		<script type="text/javascript">
+			
+			var c = document.getElementById("canvas1");
+			var ctx = c.getContext("2d");
+			ctx.fillStyle = "rgba(0,200,200,1)";
+			ctx.fillRect(10,150,200,200);
+
+
+		</script>
+
+		<hr>
+
+
+
+
+
+
+
+
+
+		<h4>canvas 2: one script, but 2 drawings in one script</h4>
+		
+
+		<canvas id="canvas2" height="600" width="1000" style="background-color: brown">
+		
+		</canvas>
+
+		<script type="text/javascript">
+			
+			var c = document.getElementById("canvas2");
+			var ctx = c.getContext("2d");
+			ctx.fillStyle = "rgba(0,200,200,1)";
+			ctx.fillRect(10,10,200,200);
+			ctx.fillRect(10,300,200,200);
+
+
+		</script>
+
+
+
+
+
+
+	</article>
+
+	<br>
+
+
+
+
+
+
+
+	<article style="background-color: blue; padding: 20px">
+
+
+		<h3>ctx lineTo</h3>
+
+
+		<canvas id="canvas3" height="600" width="1000" style="background-color: #0000a0">
+		</canvas>
+
+		<script type="text/javascript">
+			
+			var c = document.getElementById("canvas3");
+			var ctx = c.getContext("2d");
+			ctx.fillStyle = "rgba(200,200,0,1)";
+			ctx.moveTo(10,250);
+			ctx.lineTo(200,200);
+
+
+		</script>
+
+		<hr>
+
+
+
+
+
+
+
+
+
+
+
+		<h3>ctx translate</h3>
+
+
+		<canvas id="canvas4" height="800" width="1000" style="background-color: yellow">			
+		</canvas>
+
+
+		<script type="text/javascript">
+			
+			var c = document.getElementById("canvas4");
+			var ctx = c.getContext("2d");
+			ctx.font = "60px bold Tahoma";
+			ctx.fillText("hello!", 20, 80);
+			ctx.translate(10,180);
+			ctx.fillText("hi!", 20, 90);
+
+
+		</script>
+
+		<hr>
+
+
+
+
+
+
+
+
+		<h3>ctx rotate</h3>
+
+		<canvas id="canvas5" height="1000" width="1000" style="background-color: orange">
+		</canvas>
+
+		<script type="text/javascript">
+			
+			var c = document.getElementById("canvas5");
+			var ctx = c.getContext("2d");
+			ctx.fillRect(100,10,200,200);
+			ctx.rotate((Math.PI/180) * 25);
+			ctx.fillStyle = "rgba(255,255,255,1)";
+			ctx.fillRect(100,10,200,200);
+		</script>
+
+		<hr>
+
+
+
+
+
+		<script type="text/javascript">
+			
+			var c = document.getElementById("canvas5");
+			var ctx = c.getContext("2d");
+			ctx.fillStyle = "rgba(200,0,0,1)";
+			ctx.fillRect(200,200,200,200);
+
+
+
+		</script>
+
+
+
+
+
+
+
+
+
+		<h3>ctx scale</h3>
+
+		<canvas id="canvas6" height="1000" width="1000" style="background-color: yellow"></canvas>
+
+		<script type="text/javascript">
+			
+			var e = document.getElementById("canvas6");
+			var ctx = e.getContext("2d");
+			ctx.fillRect(250,50,200,200);
+			ctx.rotate((Math.PI / 180) * 25);
+			ctx.fillRect(250,50,200,200);
+			ctx.scale(4,4);
+			ctx.fillRect(50,50,200,200);
+			ctx.fillStyle = "rgba(255,255,255,1)";
+			ctx.fillRect(50,50,50,50);
+			ctx.fillText("hey!", 100, 100);
+
+
+		</script>
+
+
+
+
+
+	</article>
+
+	<br>
+
+
+
+
+
+
+
+
+
+
+
+	<article style="background-color: indigo; padding: 20px">
+
+		<h1>forms</h1>
+
+		<h3>for="" placeholder autofocus required</h3>
+
+
+		<form>
+			
+			<label>Name:</label>
+			<input id="user" type="text" name="username" autofocus="" placeholder="username" required="">
+			<br>
+			<br>
+			<label>Password:</label>
+			<input id="password" type="Password" name="Password" placeholder="password" required="">
+			<br>
+			<br>
+			<label>Email:</label>
+			<input type="Email" name="email" id="email" placeholder="email@example.com">
+			<br>
+			<BR>
+			<input type="submit" name="SUBMIT">
+		</form>
+
+		<hr>
+
+
+
+
+
+
+
+		<form autocomplete="on">
+
+			<label for="user">User</label>
+			<input id="user" type="text" name="user" autofocus="" placeholder="username" required="">
+			<br><br>
+			<label for="password">Password</label>
+			<input id="password" type="password" name="password" placeholder="password" required="">
+			<br><br>
+			<label for="email">Email</label>
+			<input id="email" type="email" name="email" placeholder="email@example.com" required="">
+			<br><br>
+			<input type="submit" name="jo">
+			<hr>
+			<input id="search" type="search" name="search" placeholder="search">
+
+		</form>
+
+		<hr>
+
+
+
+
+
+
+		<form>
+			<label for="search">Search</label>
+			<input id="cars" type="text" list="colors">
+			<datalist id="colors">
+				<option value="red"></option>
+				<option value="blue"></option>
+				<option value="green"></option>
+			</datalist>
+		</form>
+
+		<hr>
+
+
+
+
+
+
+
+
+		<form>
+			<label for="phones">Choose phone</label>
+			<input type="text" list="phones" ="">
+
+			<datalist id="phones">
+				<option value="samsung"></option>
+				<option value="nokia"></option>
+				<option value="apple"></option>
+			</datalist>
+		</form>
+
+		<hr>
+
+
+
+
+
+
+
+
+		<form autocomplete="on">
+			<label for="drinklist">Search</label>
+
+			<input id="drinklist" type="search" list="drink" autofocus="" placeholder="drinkks">
+
+			<datalist id="drink">
+				<option value="coffee"></option>
+				<option value="tea"></option>
+				<option value="juice"></option>
+			</datalist>
+		</form>
+
+		<hr>
+
+
+
+
+
+
+
+		<form>
+			<label for="email">Email:</label>
+			<input type="email" name="email" id="email" required="" placeholder="email@example.com">
+			<br>
+			<label for="Tel">Tel:</label>
+			<input type="Tel" name="Tel" id="Tel" required="" placeholder="555-555-5555">
+			<br>
+			<label for="url">URL:</label>
+			<input type="url" name="url" id="url" required="" placeholder="example.com">
+			<br><br>
+			<input type="submit" name="submit">
+		</form>
+		
+
+
+
+
+
+	</article>
+
+
+
+
+
+
+
+	
+
+
+
+
+
+	<footer>
+		
+
+
+	</footer>
+	
+
+
+
+</body>
+</html>
